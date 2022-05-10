@@ -1,0 +1,80 @@
+/* Za sve ekrane */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between
+  }
+  
+  header{
+    background-color: rgb(93, 93, 93);
+    flex-basis: 100%;
+    height: 10vh;
+  }
+  
+  main{
+    background-color: rgb(42, 34, 38);
+    flex-basis: 33%;
+    height: 70vh;
+
+  }
+centar{
+  flex-basis: 34%;
+  width: 40%;
+  height: 70vh;
+  background-color: rgb(62, 28, 28);
+
+}
+
+  aside{
+    background-color: rgb(35, 35, 37);
+    flex-basis: 33%;
+    height: 70vh;
+  }
+  
+  footer{
+    background-color: rgb(93, 93, 93);
+    flex-basis: 100%;
+    height: 20vh;
+  }
+  
+  .divUmainu{ 
+    width: 50%;
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(53, 42, 48);
+    border-radius: 40%;
+  }
+  
+  /* tableti - (za ekrane manje od 768px) */
+  @media (max-width:768px){
+    main{
+      flex-basis: 100%;
+      height: 30vh;
+    }
+    aside{
+      flex-basis: 100%;
+      height: 15vh;
+    }
+    centar{
+      flex-basis: 100%;
+      height: 15vh;
+    }
+    footer{
+      flex-basis: 100%;
+      height: 10vh;
+    }
+
+  }
+ 
+  /* mobiteli (za ekrane manje od 480px) */
+  @media (max-width:480px){
+    .divUmainu{
+      width: 100%;
+    }
+  }
